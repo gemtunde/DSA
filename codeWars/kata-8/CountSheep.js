@@ -21,6 +21,12 @@ function countSheep(num){
    // console.log(countSheep(2))//, "1 sheep...2 sheep...");
    // console.log(countSheep(3))//, "1 sheep...2 sheep...3 sheep...");
     
+   //best practice
+   var countSheep = function (num){
+  let str = "";
+  for(let i = 1; i <= num; i++) { str+= `${i} sheep...`; }
+  return str;
+}
 
 
 
