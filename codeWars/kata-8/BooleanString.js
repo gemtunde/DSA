@@ -11,3 +11,7 @@ console.log(booleanToString(true))//, "true", 'When we pass in true, we want the
 console.log(booleanToString(false))//, "false", 'When we pass in false, we want the string "false" as output');
 
 
+//best practice
+function booleanToString(b){
+  return b.toString();
+}
