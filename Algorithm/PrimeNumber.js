@@ -1,6 +1,8 @@
 
 
-
+//prime number
+//given a natural number 'n', determine if the 
+//number is prime or not
 
  function isPrime(n){
      if(n < 2) return false;
