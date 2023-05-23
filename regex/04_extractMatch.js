@@ -2,6 +2,7 @@
 
 //extract matches from a string
 //use d to extract matching word from a sentence
+//this returns a single or first occurance of the word 
 //i flag is also use for case sensitivity
 
 let extractClub = " i Love to play for Chelsea and Madrid";
