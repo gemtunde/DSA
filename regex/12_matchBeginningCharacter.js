@@ -1,6 +1,6 @@
 
 
-// ^ can also be used to test characters at the beginning of the string
+// ^ can also be used to test if character exist at the beginning of the string
 //returns true if CR7 is at the beginning of the string and false if not
 
 let str = "CR7 is a GOAT and plays excellently"
