@@ -1,5 +1,6 @@
 //every
-//every methods executes a given function/action on all the elements in the array and returns true if all the elements meets a certain condition
+//every methods executes a given function/action on all the elements in the array and 
+//returns true if all the elements meets a certain condition
 //if one or more does not meet the conditions, it returns false.
 
 //EXAMPLE 1
