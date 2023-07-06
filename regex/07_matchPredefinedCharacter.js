@@ -25,10 +25,10 @@
 
 //Example 3
 //match range of letters
-// let str = "i hate bUG, coz they are a biG mess in code and you could Bag hours to beg someone to help you solve bug "
-// let vowelRegex = /[a-z]/ig ;
-// let result = str.match(vowelRegex) ;
-// console.log(result);
+let str = "i hate bUG, coz they are a biG mess in code and you could Bag hours to beg someone to help you solve bug "
+let vowelRegex = /[a-z]/ig ;
+let result = str.match(vowelRegex) ;
+console.log(result);
 
 
 

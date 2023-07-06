@@ -8,7 +8,11 @@
 
 let wordStr = "i love Ronaldo, coz Ronaldo is skillful and Ronaldo is a goat";
 let playerRegex = /ronaldo/ig ;
+//match extracts/brings out the match
 let result = wordStr.match(playerRegex);
+
+//test checks if its true or false
+let result2 = playerRegex.test(wordStr);
 console.log(result) ;
 
 
