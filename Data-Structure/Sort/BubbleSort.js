@@ -1,6 +1,7 @@
 
 // sorts arr by compares two element at a time
-//buble sort is great whwn u have data rhat is almost sorted out
+//buble sort is great when u have data that is almost sorted out
+//places large values in sorted position first... which is end of the array
 
 function BubbleSort(arr){
 
