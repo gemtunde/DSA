@@ -93,7 +93,30 @@ class SinglyLinkList {
     return this;
   }
   //unshift ends
-  //unshift end
+
+  //get a node value starts
+  get(index) {
+    if (index < 0 || index >= this.length) return null;
+    let counter = 0;
+    let current = this.head;
+    while (index !== counter) {
+      current = current.next;
+      counter++;
+    }
+    return current.val;
+  }
+  //get ends
+
+  //set is used to update a nodes value
+  set(index, value) {
+    let foundNode = this.get(index);
+    if (foundNode) {
+      foundNode.val = value;
+      return foundNode;
+    }
+    return false;
+  }
+  //set ends
 }
 
 let list = new SinglyLinkList();
