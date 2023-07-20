@@ -47,6 +47,53 @@ class SinglyLinkList {
     }
     return current;
   }
+  //pop ends
+
+  //shift start
+  shift() {
+    if (!this.head) return undefined;
+    let currentHead = this.head;
+    this.head = currentHead.next;
+    this.length--;
+    if (this.length === 0) {
+      this.head = null;
+      this.tail = null;
+    }
+    return this;
+  }
+  //shift end
+
+  //unshift start
+  //shift start
+  shift() {
+    if (!this.head) return undefined;
+    let currentHead = this.head;
+    this.head = currentHead.next;
+    this.length--;
+    if (this.length === 0) {
+      this.head = null;
+      this.tail = null;
+    }
+    return this;
+  }
+  //shift end
+
+  //unshift start
+  unshift(val) {
+    let newNode = new Node(val);
+    if (!this.head) {
+      this.head = newNode;
+      this.tail = this.head;
+    } else {
+      let currentHead = this.head;
+      this.head = newNode;
+      this.head.next = currentHead;
+    }
+    this.length++;
+    return this;
+  }
+  //unshift ends
+  //unshift end
 }
 
 let list = new SinglyLinkList();
