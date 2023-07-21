@@ -27,7 +27,9 @@ class SinglyLinkList {
     this.length++;
     return this;
   }
-  //pop
+  //push ends
+
+  //pop starts
   // Hello -> How -> Are -> You -> !
   //  current
   //  newTail
@@ -117,6 +119,55 @@ class SinglyLinkList {
     return false;
   }
   //set ends
+
+  //insert inputs a new node to the position/index specificed/given
+  //insert inputs a new node to the position/index specificed/given
+
+  insert(index, value) {
+    let current = this.head;
+    let newTail = current;
+    let counter = 0;
+    let newNode = new Node(value);
+    if (index < 0) return null;
+    if (index >= this.length) {
+      this.push(value);
+      return this;
+    }
+    if (index === 0) {
+      this.unshift(value);
+      return this;
+    }
+    while (index !== counter) {
+      newTail = current;
+      current = current.next;
+      counter++;
+    }
+    newTail.next = newNode;
+    newNode.next = current;
+    this.length++;
+    return this;
+  }
+  //insert ends
+
+  //remove starts
+  remove(index) {
+    if (index < 0) return null;
+    if (index >= this.length) return null;
+    if (index === this.length - 1) return this.pop();
+    if (index === 0) return this.shift();
+    let counter = 0;
+    let currentHead = this.head;
+    let newTail = currentHead;
+    while (index !== counter) {
+      newTail = currentHead;
+      currentHead = currentHead.next;
+      counter++;
+    }
+    newTail.next = currentHead.next;
+    this.length--;
+    return this;
+  }
+  //remove ends
 }
 
 let list = new SinglyLinkList();
